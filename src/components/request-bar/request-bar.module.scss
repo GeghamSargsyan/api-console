@@ -1,0 +1,47 @@
+@import '../../styles/global-variables.scss';
+
+.request-bar {
+ position: relative;
+ overflow: visible;
+ height: 50px;
+
+  &_container {
+    overflow-x: scroll;
+    overflow-y: visible;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    padding: 5px 15px 5px 51px;
+    border-top: 1px solid $color-silver;
+    border-bottom: 1px solid $color-silver;
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    & > div + div {
+      margin-left: 15px;
+    }
+  }
+  
+  &_close {
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 51px;
+      height: 100%;
+      background: $background;
+      border: 1px solid $color-silver;
+      border-color: $color-silver transparent $color-silver $color-silver ;
+  }
+
+}

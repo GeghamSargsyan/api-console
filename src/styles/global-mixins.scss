@@ -1,0 +1,13 @@
+@import './global-variables.scss';
+
+@mixin title {
+  color: $color-dark;
+  font-size: $font-size-large;
+  font-weight: 400;
+}
+
+@mixin medium-text {
+  color: $color-dark;
+  font-size: $font-size-medium;
+  font-weight: 400;
+}

@@ -1,0 +1,51 @@
+@import '../../styles/global-mixins.scss';
+@import '../../styles/global-variables.scss';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 5px 15px;
+
+  &_logo,
+  &_right-section,
+  &_right-section_logout {
+    display: flex;
+    align-items: center;
+  }
+
+  &_logo {
+  
+    &_text {
+     @include title;
+     margin-left: 20px;
+    }
+  }
+
+  &_right-section {
+    & > * {
+      @include medium-text;
+    }
+
+    & > section + section {
+      margin-left: 25px;
+    }
+
+    &_sublogin {
+      padding: 10px 15px;
+      border:  1px solid $color-silver;
+      border-radius: 10px;
+    }
+
+    &_logout,
+    &_full-scrin {
+      cursor: pointer;
+
+      &_text {
+        margin-right: 11px;
+      }
+    }
+  }
+
+}

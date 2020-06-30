@@ -1,0 +1,41 @@
+@import '../styles/global-variables.scss';
+
+.query-response {
+  display: flex;
+  justify-content: center;
+  height: calc(100vh - 170px);
+  padding: 0 15px 15px;
+
+  &_query,
+  &_response {
+    width: 100%;
+    height: 100%;
+  }
+
+  &_query {
+    transform-origin: right;
+  }
+
+  &_response {
+    transform-origin: left;
+  }
+
+ &_resiz {
+   cursor: ew-resize;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 10px;
+   height: 100%;
+   margin-top: 3px;
+   background: $color-light-extra;
+
+   & > div {
+     width: 4px;
+     height: 4px;
+     border-radius: 50%;
+     background: $color-silver;
+   }
+ }
+}

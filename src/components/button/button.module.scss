@@ -1,0 +1,14 @@
+@import '../../styles/global-variables.scss';
+
+.button {
+    cursor: pointer;
+    height: 40px;
+    width: 110px;
+    padding: 5px 25px;
+    background: $color-blue-gradient;
+    border: 1px solid $color-blue;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    font-size: $font-size-medium;
+}

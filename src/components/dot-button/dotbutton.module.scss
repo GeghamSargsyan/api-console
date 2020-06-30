@@ -1,0 +1,58 @@
+@import '../../styles/global-variables.scss';
+
+$size: 12px;
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  outline: none;
+
+  & > .dot {
+    cursor: pointer;
+    transform: rotate(90deg);
+    width: $size;
+    height: 12px;
+    text-align: center;
+
+    & > span {
+      position: absolute;
+      bottom: 0;
+      display: inline-block;
+      width: 2px;
+      height: 2px;
+      background-color: $color-silver;
+      transition: ease-in-out 0.4s;
+    }
+
+    & > :first-child {
+      left: 0;
+    }
+
+    & > :nth-child(2) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    & > :last-child {
+     right: 0;
+    }
+
+    &.active {
+      transform: rotate(0deg) translateY(50%);
+
+      & > :first-child {
+        left: ($size / 2) - 1;
+        transform: rotate(45deg);
+        transform-origin: center;
+        height: $size * 2;
+      }
+
+      & > :last-child {
+        right: ($size / 2) - 1;
+        transform: rotate(-45deg);
+        transform-origin: center;
+        height: $size * 2;
+      }
+    }
+  }
+}

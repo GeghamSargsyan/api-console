@@ -1,0 +1,23 @@
+// INFO: font sizes
+$font-size-large: 24px;
+$font-size-medium: 16px;
+$font-size-small: 14px;
+
+// INFO: color scheme
+$background: #E5E5E5;
+$color-default-border: rgba(0, 0, 0, 0.2);
+$color-light: #F6F6F6;
+$color-light-extra: #FFFFFF;
+$color-green: #30B800;
+$color-red: #CF2C00;
+$color-dark: #0D0D0D;
+$color-silver: #C4C4C4;
+$color-blue: #0055FB;
+$color-blue-gradient: linear-gradient(180deg, #45A6FF 0%, #0055FB 100%);
+
+// INFO: font families
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,700&display=swap');
+
+$font-family-fira-sans: 'Fira Sans', sans-serif;
+
+

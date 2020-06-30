@@ -1,0 +1,30 @@
+@import '../../styles//global-variables.scss';
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > * {
+    width: 30px;
+    height: 30px;
+    background-color: $color-default-border;
+  }
+
+  & > section + section {
+    margin: 5px;
+  }
+
+  &_round {
+    border-radius: 50%;
+  }
+
+  &_rectangular,
+  &_table {
+    width: 15px;
+  }
+
+  &_table {
+    transform: skew(-32deg);
+  }
+}
